@@ -184,8 +184,16 @@
         margin: 0 auto; 
         padding: 20px; 
         margin-top: 30px;
+        opacity: 0;
+        transform: translateY(20px); 
+        transition: opacity 0.5s ease, transform 0.5s ease; 
     }
-
+    
+    .formacion.visible {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+    
     .ribbon {
         position: relative;
         padding: 10px 20px;
@@ -253,6 +261,13 @@
         text-decoration: underline; 
     }
 
+    .portafolio img {
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+        margin-left: 5px; 
+    }
+
     /* Sección de contacto */ 
 
     .footer {
@@ -260,6 +275,20 @@
         color: #fff; 
         padding: 20px 0; 
         text-align: center; 
+        font-size: large;
+    
+    }
+
+    .footer a {
+        color: #CCCCCC; /* Color del texto de los enlaces */
+        text-decoration: none;
+        font-size: large;
+    }
+
+    .footer a {
+        color: #CCCCCC; /* Color del texto de los enlaces */
+        text-decoration: none;
+        font-size: large;
     }
     
     .contact, .social-links {
